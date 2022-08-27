@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00B1B2210807E3D745D2A25C /* Pods_CocoPodsApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A0DDC383E3C7477DF7A9A70 /* Pods_CocoPodsApp.framework */; };
 		82408DC528BA43DF00A40774 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82408DC428BA43DF00A40774 /* AppDelegate.swift */; };
 		82408DC728BA43DF00A40774 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82408DC628BA43DF00A40774 /* SceneDelegate.swift */; };
 		82408DC928BA43DF00A40774 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82408DC828BA43DF00A40774 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7A0DDC383E3C7477DF7A9A70 /* Pods_CocoPodsApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CocoPodsApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		82408DC128BA43DF00A40774 /* CocoPodsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CocoPodsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		82408DC428BA43DF00A40774 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		82408DC628BA43DF00A40774 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		82408DCD28BA43DF00A40774 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		82408DD028BA43DF00A40774 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		82408DD228BA43DF00A40774 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1398081901318F18556A66C /* Pods-CocoPodsApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CocoPodsApp.release.xcconfig"; path = "Target Support Files/Pods-CocoPodsApp/Pods-CocoPodsApp.release.xcconfig"; sourceTree = "<group>"; };
+		D92F06FB75454835A4D96045 /* Pods-CocoPodsApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CocoPodsApp.debug.xcconfig"; path = "Target Support Files/Pods-CocoPodsApp/Pods-CocoPodsApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00B1B2210807E3D745D2A25C /* Pods_CocoPodsApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1E934A7CC8B0CD08AFF77DD4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D92F06FB75454835A4D96045 /* Pods-CocoPodsApp.debug.xcconfig */,
+				B1398081901318F18556A66C /* Pods-CocoPodsApp.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		82408DB828BA43DF00A40774 = {
 			isa = PBXGroup;
 			children = (
 				82408DC328BA43DF00A40774 /* CocoPodsApp */,
 				82408DC228BA43DF00A40774 /* Products */,
+				1E934A7CC8B0CD08AFF77DD4 /* Pods */,
+				8A1C3B1091B760D407666834 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +84,14 @@
 			path = CocoPodsApp;
 			sourceTree = "<group>";
 		};
+		8A1C3B1091B760D407666834 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7A0DDC383E3C7477DF7A9A70 /* Pods_CocoPodsApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 82408DD528BA43DF00A40774 /* Build configuration list for PBXNativeTarget "CocoPodsApp" */;
 			buildPhases = (
+				A26F1C7A47CB45D41DA1EF73 /* [CP] Check Pods Manifest.lock */,
 				82408DBD28BA43DF00A40774 /* Sources */,
 				82408DBE28BA43DF00A40774 /* Frameworks */,
 				82408DBF28BA43DF00A40774 /* Resources */,
+				F25CE5CAA6DBFC9793F5079D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A26F1C7A47CB45D41DA1EF73 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CocoPodsApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F25CE5CAA6DBFC9793F5079D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CocoPodsApp/Pods-CocoPodsApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CocoPodsApp/Pods-CocoPodsApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CocoPodsApp/Pods-CocoPodsApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		82408DBD28BA43DF00A40774 /* Sources */ = {
@@ -282,6 +351,7 @@
 		};
 		82408DD628BA43DF00A40774 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D92F06FB75454835A4D96045 /* Pods-CocoPodsApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -310,6 +380,7 @@
 		};
 		82408DD728BA43DF00A40774 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1398081901318F18556A66C /* Pods-CocoPodsApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
